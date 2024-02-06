@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Paul Gomez | Games</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('set.jpg');
+            background-size: cover;
+        }
+
+        header {
+            background-color: rgb(51, 153, 255, 0.5);
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: transparent; /* Reset background color on hover */
+        }
+
+        nav a:hover:nth-child(1) {
+            background-color: green;
+            color: red;
+        }
+
+        nav a:hover:nth-child(2) {
+            background-color: red;
+            color: green;
+        }
+
+        nav a:hover:nth-child(3) {
+            background-color: blue;
+            color: yellow;
+        }
+
+        nav a:hover:nth-child(4) {
+            background-color: yellow;
+            color: blue;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Add space between columns */
+        }
+
+        .section-container {
+            flex: 1;
+            width: 48%; 
+            margin: 10px;
+            position: relative;
+        }
+
+        section {
+            padding-top: 74px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            background-color: rgb(204, 0, 153, 0.4);
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            height: auto;
+        }
+
+        section img {
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 0 auto; 
+            border-radius: 5px 5px 0 0; 
+        }
+
+        section .text-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(51, 102, 255, 0.75); 
+            color: white;
+            font-size: 1.5em;
+            text-align: center;
+            z-index: 2;
+        }
+
+        section .more-images {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        section .more-images img {
+            max-width: 50%; 
+            border-radius: 5px; 
+            padding: 5px;
+        }
+
+
+        footer {
+            background-color: rgb(51, 153, 255, 0.75);
+            color: green;
+            padding: 10px;
+            text-align: center;
+        }
+
+        a {
+            color: red;
+        }
+
+        a:hover {
+            color: green;
+        }
+
+        p {
+            font-size: 17px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="stringwave-logo.png" alt="Logo" width="50" height="50">
+        </div>
+        <nav>
+            <a href="index.html" target="_blank">Home</a>
+            <a href="games.html" target="_blank">Games</a>
+            <a href="2d-art.html" target="_blank">2D Art</a>
+            <a href="3d-art.html" target="_blank">3D Art</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section-container">
+            <section>
+                <img src="gamebord.jpg" alt="about">
+                <div class="text-overlay">
+                    <p>What On Earth Did You Just Do!?</p>
+                </div>
+                <p>I was the Producer for a final board game for my CTIN 488 class. This is a Social game where players get to know each other through deep discussions, but must also beware because each player has secret actions they must get the other players to complete. And the person with the most points wins.</p>
+
+                <div class="more-images">
+                    <img src="Board_Final.jpg" alt="Additional Image 1">
+                    
+                    <img src="play.jpg" alt="Additional Image 2">
+                    
+                </div>
+                <p>The players navigate through the board where they usually draw and action card, discussion card, or swap out their actions either from the deck or another players hand.</p>
+            </section>
+        </div>
+
+        <div class="section-container">
+            <section>
+                <img src="labb.png" alt="2d">
+                <div class="text-overlay">
+                    <p>Labarynth</p>
+                </div>
+                <p>A game I coded using HTML and CSS. it is meant to be a maze game where the player starts at the starting block and must navigate through the maze and find the green squares all the way to the finish, finding a red square means they must restart.</p>
+                <div class="more-images">
+                    <img src="lab1.png" alt="Additional Image 3">
+                    <img src="lab.png" alt="Additional Image 4">
+                    
+                </div>
+                <p>I used simple HTML and CSS to code this game and utilized the hover function and created multiple rows and columns to create the maze.</p>
+            </section>
+        </div>
+
+        <div class="section-container">
+            <section>
+                <img src="frontart.png" alt="Logo">
+                <div class="text-overlay">
+                    <p>Roll For Dough-Ception</p>
+                </div>
+                <p>A board game I created with a group where we had certain mechanics and constrainst we had to follow. This is a cooking based game where the players must work together to complete their meal before the head chef completes their meal.</p>
+                <div class="more-images">
+                    <img src="test.jpg" alt="Additional Image 5">
+                    <img src="cook.jpg" alt="Additional Image 6">
+                   
+                </div>
+                <p>Our constraints were that it must be a player/multiple players vs game, there must be a bluffing/cheating mechanic, as well as a capture feature, and a dramatic element of cooking.</p>
+            </section>
+        </div>
+
+        <div class="section-container">
+            <section>
+                <img src="race.png" alt="3d">
+                <div class="text-overlay">
+                    <p>Race Against Thieves</p>
+                </div>
+                <p>The first Board game I created this semester with a group for CTIN 488. We had to create a mod of the game Up The River, where we took its core mechnics and twisted them and changed dramatic elements to create a new game that was similar but different enough to Up The River to be a separate game.</p>
+                <div class="more-images">
+                    <img src="backart.png" alt="Additional Image 7">
+                    <img src="test2.png" alt="Additional Image 8">
+                    
+                </div>
+                <p>This game follows 4 thieves who are racing to be the first to make it to the jewel safe and back in order to win, but they must watch out for all the obstacles such as lasers, pressure plates, or security cameras, but don't worry because there is also a grappling hook that'll give you a boost</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <a href="contact.html" target="_blank">Contact</a>
+    </footer>
+
+</body>
+
+</html>

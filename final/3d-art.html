@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Paul Gomez | 3D Art</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('3dartt.jpg');
+            background-size: cover;
+        }
+
+        header {
+            background-color: rgb(204, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: transparent; /* Reset background color on hover */
+        }
+
+        nav a:hover:nth-child(1) {
+            background-color: green;
+            color: red;
+        }
+
+        nav a:hover:nth-child(2) {
+            background-color: red;
+            color: green;
+        }
+
+        nav a:hover:nth-child(3) {
+            background-color: blue;
+            color: yellow;
+        }
+
+        nav a:hover:nth-child(4) {
+            background-color: yellow;
+            color: blue;
+        }
+
+        .main {
+            padding: 25px;
+        }
+
+        .section-container {
+            width: 100%; /* Full width */
+            margin: 10px;
+            position: relative;
+        }
+
+        section {
+            padding-top: 20px; /* Adjust as needed */
+            padding-bottom: 20px;
+            background-color: rgb(205, 0, 255, 0.4);
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        section img, section video {
+            width: 30%; /* Adjust the width of the media */
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        section .text-overlay {
+            color: white;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: rgb(204, 0, 0, 0.5);
+            color: orange;
+            padding: 10px;
+            text-align: center;
+        }
+
+        a {
+            color: green;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        p {
+            padding-right: 15px;
+            font-size: 16px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="stringwave-logo.png" alt="Logo" width="50" height="50">
+        </div>
+        <nav>
+            <a href="index.html" target="_blank">Home</a>
+            <a href="games.html" target="_blank">Games</a>
+            <a href="2d-art.html" target="_blank">2D Art</a>
+            <a href="3d-art.html" target="_blank">3D Art</a>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="section-container">
+            <section>
+                <img src="so2_c003.0044.jpg" alt="about">
+                <video controls>
+                    <source src="paul_gomez_movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="truck.jpg" alt="Logo">
+                <div class="text-overlay">
+                    <p>This is A project I did for ITP 215 where I 3d modeled a truck from scratch and learned a lot of the fundamentals of Maya 3D. I UV mapped the truck using actual images and created a total of 9 clips with 3 clips in 1 scene for a total of 3 scenes using different typed of camera angles and learning arnold renderer. As you watch the video you will also notice props throughout the table that were made by different people in the class for anyone else in the class to use for their scene. </p>
+                </div>
+            </section>
+        </div>
+
+        <div class="section-container">
+            <section>
+                <img src="chess.00056.jpg" alt="about">
+                <video controls>
+                    <source src="chess_set_movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="chess.jpg" alt="about">
+                <div class="text-overlay">
+                    <p>This project is a chess set in a dark room with light shining through a window. I modeled this for more of an aesthetic project, but I thought I would take it a step further and animate the first couple moves of a chess game. I used glossy and wooden tectures to model the chess board and UV mapped each piece once and multiplied it and changed the texture. I also used lighting to add to the aesthetic of the overall scene. </p>
+                </div>
+            </section>
+        </div>
+
+        <div class="section-container">
+            <section>
+                <img src="bouncy.10.jpg" alt="about">
+                <video controls>
+                    <source src="bouncing_ball.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="officeset.jpg" alt="Logo">
+                <div class="text-overlay">
+                    <p>For this project I modeled an entire office that contained a desk, chair, rug, window, as well as a laptop with actual lighting, and lighting shining through the window leaving a shadow on the rug. I added a bouncing ball animation to highlight the different shapes of the ball as it goes through the air and makes contact with the floor. This project taught me a lot about making a bouncing ball animation as well as casting shadows.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <a href="contact.html" target="_blank">Contact</a>
+    </footer>
+
+</body>
+
+</html>

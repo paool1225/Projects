@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Paul Gomez | FINAL PROJECT HOMEPAGE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('back.jpg');
+            background-size: cover;
+        }
+
+        header {
+            background-color: rgb(102, 0, 102, 0.5);
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: transparent; /* Reset background color on hover */
+        }
+
+        nav a:hover:nth-child(1) {
+            background-color: green;
+            color: red;
+        }
+
+        nav a:hover:nth-child(2) {
+            background-color: red;
+            color: green;
+        }
+
+        nav a:hover:nth-child(3) {
+            background-color: blue;
+            color: yellow;
+        }
+
+        nav a:hover:nth-child(4) {
+            background-color: yellow;
+            color: blue;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Add space between columns */
+        }
+
+        .section-container {
+            flex: 1;
+            width: 48%; /* Adjust the width as needed */
+            margin: 10px;
+            position: relative;
+        }
+
+        section {
+            padding: 20px;
+            background-color: rgb(204, 153, 0, 0.5);
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            height: auto;
+        }
+
+        section img {
+            max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove extra space below the image */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+
+        section .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 1.5em;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center;
+            z-index: 2;
+        }
+
+        section:hover .text-overlay {
+            opacity: 1;
+        }
+
+        section:hover::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Adjust the transparency here */
+            z-index: 1;
+        }
+
+        footer {
+            background-color: rgb(102, 0, 102, 0.75);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        a {
+            color: yellow; 
+            
+        }
+
+      
+
+        a:hover {
+            color: #ff0000; 
+        }
+        p{
+            font-size: 17px;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="stringwave-logo.png" alt="Logo" width="50" height="50">
+        </div>
+        <nav>
+            <a href="index.html" target="_blank">Home</a>
+            <a href="games.html" target="_blank">Games</a>
+            <a href="2d-art.html" target="_blank">2D Art</a>
+            <a href="3d-art.html" target="_blank">3D Art</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section-container">
+            <section>
+                <img src="about.jpg" alt="about">
+                <div class="text-overlay">
+                    <p><a href="index.html" target="_blank">About</a></p>
+                    <p>Hello! My name is Paul and I am a student at USC majoring in Computer Science Games. This website is for me to showcase some of my creative skills and projects such as some of the games I have had a hand in designing and making as well as the 2D and 3D art that I have created. Feel free to explore my website and contact for any inquiries!</p>
+                </div>
+            </section>
+            <section>
+                <img src="2dart.jpg" alt="2d">
+                <div class="text-overlay">
+                    <p><a href="2d-art.html" target="_blank">2D Art</a></p>
+                    <p>A collection of the 2D-Art I have created for academic and personal projects both hand drawn as well as made using photoshop or illustrator.</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="section-container">
+            <section>
+                <img src="video.jpg" alt="Logo">
+                <div class="text-overlay">
+                    <p><a href="games.html" target="_blank">Games</a></p>
+                    <p>A collection of games that i have had a hand in creating both digital and board games, primarily from my game design workshop class.</p>
+                </div>
+            </section>
+            <section>
+                <img src="3dart.jpg" alt="3d">
+                <div class="text-overlay">
+                    <p><a href="3d-art.html" target="_blank">3D Art</a></p>
+                    <p>A collection of the 3D-Art and rendered scenes or frames that I have created using Autodesk Maya 2023.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <a href="contact.html" target="_blank">Contact</a>
+    </footer>
+
+</body>
+
+</html>

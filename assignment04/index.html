@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paul Gomez | Calendar</title>
+    <style>
+        body{
+            background-color: lightskyblue;
+        }
+        .top-content{
+            max-width: 1000px;
+            height: 500px;
+            background-image: url('december.jpg');
+            background-size: cover;
+            padding: 0px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            color: lavenderblush;
+            margin: 0 auto;
+            overflow: hidden;
+            clear: both;
+            border: 2px solid black;
+
+
+        }
+        .bottom-content{
+            max-width: 1000px;
+            height: 500px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            color: lavenderblush;
+            margin: 0 auto;
+            overflow: hidden;
+            clear: both;
+            border: 2px solid black;
+            padding: 0px;
+            background-color: lavenderblush;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-columns: repeat(7, 1fr);
+            gap: 0px;
+        }
+        #bday{
+            text-align: center;
+            margin: auto;
+            color: limegreen;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-size: 15px;
+            display: flex;
+            position: absolute;
+            z-index: 1;
+            transform: translate(23%, -150%);
+        }
+        #christmaseve{
+            text-align: center;
+            margin: auto;
+            color: firebrick;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-size: 15px;
+            display: flex;
+            position: absolute;
+            z-index: 1;
+            transform: translate(23%, -150%);
+        }
+        #newyeareve{
+            text-align: center;
+            margin: auto;
+            color: yellow;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-size: 15px;
+            display: flex;
+            position: absolute;
+            z-index: 1;
+            transform: translate(23%, -150%);
+        }
+        .weekday{
+            font-weight: bold;
+            text-align: center;
+            width: auto;
+            height: 15px;
+            padding: 0px;
+            border: 0.5px solid black;
+            background-color: white;
+            color: black;
+
+        }
+        .day {
+            width: auto;
+            height: 80px;
+            text-align: right;
+            padding: 0px;
+            border: 1px solid black;
+            color: black;
+            background-color: white;
+        }
+        .disabled {
+            color: slategray;
+            background-color: lightgray;
+        }
+        img{
+            width: 70px;
+            height: 60px;
+            display: flex;
+            margin: auto;
+            position: relative;
+        }
+        h1{
+            margin: auto;
+            font-size: 48px;
+        }
+        .highlight{
+            color: violet;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="top-content">
+    <h1>December 2023</h1>
+</div>
+<div class="bottom-content">
+            <div class="weekday">Sun</div>
+            <div class="weekday">Mon</div>
+            <div class="weekday">Tue</div>
+            <div class="weekday">Wed</div>
+            <div class="weekday">Thu</div>
+            <div class="weekday">Fri</div>
+            <div class="weekday">Sat</div>
+            <div class="day disabled">26</div>
+            <div class="day disabled">27</div>
+            <div class="day disabled">28</div>
+            <div class="day disabled">29</div>
+            <div class="day disabled">30</div>
+            <div class="day">1</div>
+            <div class="day">2</div>
+            <div class="day">3</div>
+            <div class="day">4</div>
+            <div class="day">5</div>
+            <div class="day">6</div>
+            <div class="day">7</div>
+            <div class="day">8</div>
+            <div class="day">9</div>
+            <div class="day">10</div>
+            <div class="day">11</div>
+            <div class="day">12</div>
+            <div class="day">13</div>
+            <div class="day">14</div>
+            <div class="day">15</div>
+            <div class="day">16</div>
+            <div class="day">17</div>
+            <div class="day">18</div>
+            <div class="day">19</div>
+            <div class="day">20</div>
+            <div class="day">21</div>
+            <div class="day">22</div>
+            <div class="day">23</div>
+            <div class="day"><div class="highlight">24</div><img src="christmas.png" alt="eve"><div id="christmaseve"><p>Christmas Eve</p></div></div>
+            <div class="day"><div class="highlight">25</div><img src="cake.png" alt="cake"><div id="bday"><p>Pauls Birthday!</p></div></div>
+            <div class="day">26</div>
+            <div class="day">27</div>
+            <div class="day">28</div>
+            <div class="day">29</div>
+            <div class="day">30</div>
+            <div class="day"><div class="highlight">31</div><img src="newyear.png" alt="bottle"><div id="newyeareve"><p>New Years Eve</p></div></div>
+            <div class="day disabled">1</div>
+            <div class="day disabled">2</div> 
+            <div class="day disabled">3</div>
+            <div class="day disabled">4</div>
+            <div class="day disabled">5</div>
+            <div class="day disabled">6</div>
+        </div>
+
+
+</body>
+</html>

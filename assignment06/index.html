@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Gomez | FONTS/DROPDOWN MENU, OVERLAY CAPTIONS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+    <style>
+        @font-face {
+            font-family: 'NosiferRegular';
+            src: url('fonts/nosifer-regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background-color: goldenrod;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-shadow: 2px 2px 4px orange;
+            font-family: 'Pacifico', cursive; /* Font from dafont.com */
+        }
+
+        h2 {
+            font-size: 18px;
+            font-family: 'NosiferRegular', cursive;
+            
+        }
+        h6{
+            font-family: 'Lobster', cursive;
+        }
+
+        .small {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            float: right;
+            width: 120px;
+            height: auto;
+            display: flex;
+        }
+
+        .left {
+            float: left;
+            height: 125px;
+            width: auto;
+        }
+
+        .header {
+            height: 550px;
+            background-image: url('avatar.jpg');
+            background-size: cover;
+            text-align: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-container {
+            width: 85%;
+            min-width: 85%;
+            max-width: 85%;
+            margin: 0 auto;
+            background-color: cornflowerblue;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 25%;
+            min-width: 25%;
+            max-width: 25%;
+            float: left;
+            text-align: center;
+            background-color: peru;
+            padding: 10px;
+            clear: both;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .small {
+            position: relative;
+            overflow: hidden;
+            width: 142px;
+            height: 165px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .small img {
+            width: 150px;
+            height: 150px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .small:hover img {
+            transform: scale(1.1);
+        }
+
+        .small h6 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            padding: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .small:hover h6 {
+            opacity: 1;
+        }
+
+        .content {
+            width: 70%;
+            min-width: 70%;
+            max-width: 70%;
+            float: left;
+            background-color: cornflowerblue;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: lavenderblush;
+            color: darkcyan;
+            text-align: center;
+            padding: 15px;
+            bottom: 0;
+            width: auto;
+        }
+
+        .mini-container {
+            width: 100%;
+            height: auto;
+            background-color: orangered;
+            text-align: center;
+            padding: 10px;
+            clear: both;
+        }
+
+        .section {
+            display: inline-block;
+            margin: 0 20px;
+            cursor: pointer;
+        }
+
+        .section:hover {
+            background-color: skyblue;
+        }
+
+        .section a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+
+        /* Dropdown Styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: peru;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: skyblue;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Avatar: The Last Airbender</h1>
+    </div>
+
+    <div class="mini-container">
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+            <span class="section">Home</span>
+            <div class="dropdown-content">
+                <a href="#main-characters">Main Characters</a>
+                <a href="#show-synopsis">Show Synopsis</a>
+                <a href="#production-development">Production and Development</a>
+                <a href="#characters-abilities">Characters and Abilities</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <a href="gallery.html" target=" _blank">Gallery</a>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h2>Main Characters</h2>
+
+        <div class="small">
+            <img src="cast1.jpeg" alt="sokka">
+            <h6>Jack De Sena <br> As Sokka</h6>
+        </div>
+
+        <div class="small">
+            <img src="cast2.jpeg" alt="aang">
+            <h6>Zach Tyler Eisen <br> As Aang</h6>
+        </div>
+
+        <div class="small">
+            <img src="cast3.jpeg" alt="zuko">
+            <h6>Dante Basco <br> As Zuko</h6>
+        </div>
+
+        <div class="small">
+            <img src="cast4.jpeg" alt="katara">
+            <h6>Mae Whitman<br> As Katara</h6>
+        </div>
+    </div>
+
+    <div class="content" id="main-characters">
+        <h2>Show Synopsis</h2>
+        <img src="avatar2.jpg" alt="first">
+        <p>Avatar: The Last Airbender is an epic animated series that unfolds in a world divided into four elemental nations: Water, Earth, Fire, and Air. In this realm, some individuals possess the power to bend, or manipulate, their native element. However, one individual, known as the Avatar, has the unique ability to control all four elements, serving as the bridge between nations and the world's peacemaker.</p>
+        <p>The story follows Aang, the last surviving Airbender and the long-lost Avatar, as he awakens from a century-long slumber to a world engulfed in war. With the help of his friends Katara and Sokka, Aang embarks on a perilous journey to master the elements, confront the oppressive Fire Nation, and restore balance to the world. As they encounter new allies and formidable foes, the fate of humanity hangs in the balance, making "Avatar: The Last Airbender" a timeless tale of friendship, adventure, and the enduring struggle for harmony.</p>
+    </div>
+
+    <div class="content" id="production-development">
+        <h2>Production and Development</h2>
+        <div class="left"><img src="aang.jpeg" alt="second"></div>
+        <p>Avatar: The Last Airbender was created by Michael Dante DiMartino and Bryan Konietzko. The series emerged from their vision of a rich, culturally diverse world with a compelling narrative. Development involved meticulous world-building, drawing inspiration from various Asian cultures and mythologies to craft the show's unique universe.</p>
+        <p>DiMartino and Konietzko's dedication to storytelling excellence led to the creation of memorable characters and a captivating storyline. The show's success is a testament to their creative collaboration and their commitment to producing a series that resonated with audiences, combining elements of fantasy, adventure, and meaningful themes.</p>
+    </div>
+
+    <div class="content" id="characters-abilities">
+        <h2>Characters and Abilities</h2>
+        <img src="abilities.jpg" alt="third">
+        <p>The series features a diverse cast of characters, each with their unique personalities and backgrounds. Aang, the young Airbender and the last Avatar, leads the group. He is joined by Katara, a skilled Waterbender, and her brother Sokka, known for his resourcefulness. Together, they form a tight-knit team on a quest to restore balance to the world.</p>
+        <p>One of the central themes of the series is bending, the ability to manipulate one of the four elements: Water, Earth, Fire, and Air. Each nation has its own bending style, and individuals known as benders can harness their respective element's power. Aang, as the Avatar, possesses the rare ability to bend all four elements, making him a formidable force. Throughout their journey, the characters encounter various benders and non-benders, each contributing their unique skills and abilities to the group's adventures. This dynamic cast and the exploration of bending abilities add depth and excitement to the series.</p>
+    </div>
+
+    <footer>Watch it on Netflix!</footer>
+</body>
+
+</html>
+

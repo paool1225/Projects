@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paul Gomez | Form Page</title>
+    <style>
+    h1{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    p{
+        font-weight: bold;
+        font-size: 18px;
+    }
+    label{
+        font-weight: normal;
+        font-size: 15px;
+    }
+    .container{
+        border: 2px solid black;
+        padding: 20px;
+        width: 80%;
+        margin: 0 auto;
+        background-color: palegreen;
+    }
+    .comment{
+        display: inline-flex;
+        vertical-align: top;
+    }
+    .colored-button{
+        background-color: lightblue;
+        color: black;
+        border: solid;
+        padding: 3px 8px;
+        cursor: pointer;
+    }
+    .colored-button:hover{
+        background-color: red;
+    }
+    .reset-button{
+        background-color: mediumvioletred;
+        color: black;
+        border: solid;
+        padding: 3px 8px;
+        cursor: pointer;   
+    }
+    .reset-button:hover{
+        background-color: orange;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action="confirmation.html">
+    <h1>T-Shirt Order Form:</h1>
+    
+    <p>First Name:
+    <label for="first-name"></label>
+    <input type="text" id="first-name" placeholder="John">
+    </p>
+
+    <p>Last Name:
+    <input type="text" id="last-name" placeholder="Doe">
+    </p>
+
+    <p>Email:
+    <input type="email" id="email" placeholder="jdoe@usc.edu">
+    </p>
+
+    <p>Phone Number:
+    <input type="tel" id="phone" placeholder="(123) 123-1234">
+    </p>
+    
+    <p>Shirt Color:
+    <label>
+        <input type="radio" name="shirt-color" value="red">Red
+    </label>
+    <label>
+        <input type="radio" name="shirt-color" value="black">Black
+    </label>
+    <label>
+        <input type="radio" name="shirt-color" value="gray">Gray
+    </label>
+    <label>
+        <input type="radio" name="shirt-color" value="blue">Blue
+    </label>
+    <label>
+        <input type="radio" name="shirt-color" value="green">Green
+    </label>
+    </p>
+    
+    <p>Sleeve Length:
+    <label>
+        <input type="radio" name="sleeve-length" value="black">Long
+    </label>
+    <label>
+        <input type="radio" name="sleeve-length" value="gray">Short
+    </label>
+    <label>
+        <input type="radio" name="sleeve-length" value="blue">Sleeveless
+    </label>
+    </p>
+    
+    <p>Print:
+    <label>
+        <input type="checkbox" name="print" value="your name">Your Name
+    </label>
+    <label>
+        <input type="checkbox" name="print" value="band logo">Band Logo
+    </label>
+    <label>
+        <input type="checkbox" name="print" value="band logo">SuperHero Logo
+    </label>
+    <label>
+        <input type="checkbox" name="print" value="band logo">Game Logo
+    </label>
+    </p>
+    <p>Size:
+    <select id="size" name="Size">
+    <option disabled selected value>--Select size--</option>
+    <option value="x-Small">x-Small</option>
+    <option value="small">Small</option>
+    <option value="medium">Medium</option>
+    <option value="large">Large</option>
+    <option value="x-Large">x-Large</option>
+    </select>
+    </p>
+
+    
+    <div class="comment">
+    <p>Comments: </p>
+    <textarea id="comments" rows="4" cols="40"
+    name="msg"></textarea>
+    </div>
+    <br>
+    <label>
+    <input type="checkbox" name="accept" id="accept">
+    I accept the terms and conditions
+    </label>
+    <br>
+    <button class="colored-button" type="submit">Submit</button>
+    <button class="reset-button" type="reset">Reset</button>
+
+
+    
+</form>
+</div>
+</body>
+</html>

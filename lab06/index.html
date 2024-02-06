@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paul Gomez | Simple Image Gallery</title>
+    <style>
+        body{
+            background-color: lightgoldenrodyellow;
+        }
+        .bigpic{
+            width: 1100px;
+            height: 700px;
+            margin: auto;
+            color: wheat;
+            display: flex;
+            margin: auto;
+            background-image: url('california.png');
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .top-row,
+        .bottom-row{
+            display: flex;
+            justify-content: center; 
+        }
+        .image-caption{
+            margin: 15px;
+            position: relative;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            padding: 15px 15px 40px 15px; 
+            background-color: whitesmoke; 
+            border: 2px solid black; 
+            transition: border-color 0.3s ease;
+        }
+        .caption{
+            position: absolute;
+            background-color: rgba(255, 204, 0, 0.7);
+            color: black;
+            transform: translate(15px, -43px);
+            padding: 5px;
+            text-align: center;
+            margin: auto;
+            font-size: 18px;
+            display: none;
+        }
+        .image-caption:first-child{
+            font-weight: bold;
+
+        }
+        .image-caption:hover .caption{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="bigpic">
+    <h1>My California Adventures</h1>
+    <div class="top-row">
+        <div class="image-caption first">
+            <img src="disney.jpg" alt="disney">
+            <div class="caption">Disney Land Trip</div>
+        </div>
+        <div class="image-caption">
+            <img src="park.jpg" alt="park">
+            <div class="caption">Walk In the Park</div>
+        </div>
+        <div class="image-caption">
+            <img src="beach.jpg" alt="beach">
+            <div class="caption">Downward Beach Dog</div>
+        </div>
+    </div>
+    <div class="bottom-row">
+        <div class="image-caption">
+            <img src="weezer.jpg" alt="weezer">
+            <div class="caption">You just got Weezer'd</div>
+        </div>
+        <div class="image-caption">
+            <img src="cuco.jpg" alt="cuco">
+            <div class="caption">First ever Concert</div>
+        </div>
+        <div class="image-caption">
+            <img src="drawing.jpg" alt="drawing">
+            <div class="caption">Night Market Adventure</div>
+        </div>
+        <div class="image-caption">
+            <img src="snow.jpg" alt="snow">
+            <div class="caption">Baby It's Cold Outside</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

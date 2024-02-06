@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paul Gomez's student page">
+    <title>Paul Gomez | Responsive Student Page</title>
+    <style>
+        body{
+            background-image: url('games.jpeg');
+            margin: 0;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        em{
+            background-color: darkgreen;
+            color: lightblue;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        #container {
+            width: 90%;
+            margin-left: auto;
+            margin-top: 10px;
+            margin-right: auto;
+            text-align: center;
+            box-sizing: border-box;
+            background-color: darkorange;
+            justify-content: center;
+            padding: 20px;
+        }       
+        .row2{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: lavenderblush; 
+        }
+        .row3{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: powderblue;
+            margin-bottom: 10px; 
+        }
+        .column {
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+            max-width: 400px;
+        }
+        .floatRight {
+            padding-right: 10px;
+        }
+                @media (max-width: 767px) {
+            .column {
+                flex: 100%;
+                padding: 0;
+            }
+        } 
+    </style>
+    
+</head>
+<body>
+<div id="container">
+    <h1>Paul Gomez</h1>
+    <p><a href= "mailto:psgomez@usc.edu" target=" _blank">psgomez@usc.edu.</a></p>
+</div>
+<div class="row2">
+    <div class="column">
+        <p>Favorite Color: <em>Dark Green</em></p>
+        <p>Favorite Website: <a href="https://www.youtube.com/" target=" _blank">YouTube</a></p>
+        <h2>Favorite Hobby:</h2>
+        <img src="hiking.jpeg" alt="hike">
+    </div>
+    <div class="column floatRight"> 
+        <h3>School Schedule:</h3>
+        <ol>
+            <li>CSCI 103</li>
+            <li>CSCI 170</li>
+            <li>CTIN 190</li>
+            <li>CTIN 488</li>
+            <li>ITP 104</li>
+        </ol>
+    </div>
+</div>
+<div class="row3">
+    <div class="column">
+        <h3>Assignments</h3>
+        <ul>
+            <li>
+            <a href="assignment01/index.html" target=" _blank">Assignment 01: Web Resume</a>
+            </li>
+            <li>
+            <a href="assignment02/index.html" target=" _blank">Assignment 02: TV show/movie Article</a>
+            </li>
+            <li>
+            <a href="assignment03/index.html" target=" _blank">Assignment 03: Two-Column TV Show/Movie Article</a>
+            </li>
+            <li>
+            <a href="assignment04/index.html" target=" _blank">Assignment 04: Calendar</a>
+            </li>
+            <li>
+            <a href="assignment05/index.html" target=" _blank">Assignment 05: TV Show/Movie Photo Collage</a>
+            </li>
+            <li>
+            <a href="assignment06/index.html" target=" _blank">Assignment 06: Fonts, Drop-Down Menu, Overlay Captions</a>
+            </li>
+          
+        </ul>
+    </div>
+    <div class="column floatRight"> 
+        <h3>Labs</h3>
+        <ul>
+            <li>
+            <a href="lab02/index.html" target=" _blank">Lab 02: Student Web Page</a>
+            </li>
+            <li>
+            <a href="lab03/index.html" target=" _blank">Lab 03: Updated Resume</a></li>
+            <li>
+            <a href="lab04/index.html" target=" _blank">Lab 04: Student Layout Page</a></li>
+            <li>
+            <a href="lab05/index.html" target=" _blank">Lab 05: Form Page</a>
+            </li>
+            <li>
+            <a href="lab06/index.html" target=" _blank">Lab 06: Simple Image Gallery</a>
+            </li>
+            <li>
+            <a href="lab07/index.html" target=" _blank">Lab 07: Image Puzzle</a></li>
+            <li>
+            <a href="lab08/index.html" target=" _blank">Lab 08: Responsive Student Page</a></li>
+            
+        </ul>
+    </div>
+</div>
+</body>
+</html>

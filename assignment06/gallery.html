@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Gomez | TV Show/Movie Article gallery</title>
+    <style>
+        body {
+            background-color: goldenrod;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 27px;
+            text-shadow: 2px 2px 4px green;
+        }
+
+        .header {
+            height: 500px;
+            width: 100%;
+            background-image: url('gallery11.jpeg');
+            background-size: cover;
+            text-align: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-container {
+            width: 786px;
+            min-width: auto;
+            margin: 0 auto;
+            background-color: cornflowerblue;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0px;
+        }
+
+        footer {
+            background-color: lavenderblush;
+            color: darkcyan;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .mini-container {
+            width: 100%;
+            height: auto;
+            background-color: orangered;
+            text-align: center;
+            padding: 10px;
+            clear: both;
+        }
+
+        .section {
+            display: inline-block;
+            margin: 0 20px;
+            cursor: pointer;
+        }
+
+        .section:hover {
+            background-color: skyblue;
+        }
+
+        .section a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+
+        .img-container {
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+            cursor: pointer;
+            width: 33.3%;
+            padding: 2px;
+            margin-bottom: 0px;
+            box-sizing: border-box;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 145px;
+            display: block;
+            margin: 0;
+        }
+
+        .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        padding: 0px;
+        color: black;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        opacity: 0;
+        transition: opacity 0.5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+
+        .img-container:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Gallery</h1>
+    </div>
+
+    <div class="mini-container">
+        <div class="section">
+            <a href="index.html" target="_blank">Home</a>
+        </div>
+        <div class="section">
+            <a href="gallery.html" target="_blank">Gallery</a>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="img-container">
+            <img src="gallery1.jpeg" alt="img1">
+            <div class="overlay">Aang Firebending</div>
+        </div>
+
+        <div class="img-container">
+            <img src="gallery2.jpeg" alt="img2">
+            <div class="overlay">Cursed Aang image</div>
+        </div>
+
+        <div class="img-container">
+            <img src="gallery3.jpeg" alt="img3">
+            <div class="overlay">Aang and Zuko</div>
+        </div>
+
+        <div class="img-container">
+            <img src="gallery4.jpeg" alt="img4">
+            <div class="overlay">Aang, Katara, Sokka, Momo, and Appa</div>
+        </div>
+
+        <div class="img-container">
+            <img src="gallery5.jpeg" alt="img5">
+            <div class="overlay">Firelord Zuko</div>
+        </div>
+
+        <div class="img-container">
+            <img src="gallery6.jpeg" alt="img6">
+            <div class="overlay">Toph: The Blind Bandit</div>
+        </div>
+
+        <div class="img-container">
+            <img src="gallery7.jpeg" alt="img7">
+            <div class="overlay">Sokka and Katara of the Southern Water Tribe</div>
+        </div>
+
+        <div class="img-container">
+            <img src="gallery8.jpeg" alt="img8">
+            <div class="overlay">Flying on air Appa</div>
+        </div>
+
+        <div class="img-container">
+            <img src="gallery9.jpeg" alt="img9">
+            <div class="overlay">Group meeting</div>
+        </div>
+
+        <div class="img-container">
+            <img src="gallery10.jpeg" alt="img10">
+            <div class="overlay">Aang vs Firelord Ozai</div>
+        </div>
+
+        <div class="img-container">
+            <img src="gallery12.jpeg" alt="img12">
+            <div class="overlay">Lovable unlce Iroh</div>
+        </div>
+
+        <div class="img-container">
+            <img src="gallery13.jpeg" alt="img13">
+            <div class="overlay">Sokka in Shock and Awe</div>
+        </div>
+    </div>
+
+    <footer>Watch it on Netflix!</footer>
+</body>
+
+</html>

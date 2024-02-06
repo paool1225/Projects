@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paul Gomez | Student Page</title>
+    <style>
+        body{
+            background-image: url('games.jpeg');
+        }
+        em{
+            background-color: darkgreen;
+            color: lightblue;
+        }
+        img{
+            height: 200px;
+            width: auto;
+        }
+        #container {
+            width: 950px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px; 
+            text-align: center;
+            background-color: khaki;
+            clear: both;
+        }       
+        .row2{
+            width: 950px;
+            margin-right: auto;
+            margin-left: auto;
+            clear: both;
+            background-color: lavenderblush;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap; 
+        }
+        .row3{
+            width: 950px;
+            margin-right: auto;
+            margin-left: auto;
+            clear: both;
+            background-color: powderblue;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap; 
+        }
+        .column {
+            flex: 1; 
+            padding: 10px;
+        }
+        .floatRight {
+            padding-right: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+<div id="container">
+    <h1>Paul Gomez</h1>
+    <p><a href= "mailto:psgomez@usc.edu" target=" _blank">psgomez@usc.edu.</a></p>
+</div>
+<div class="row2">
+    <div class="column">
+        <p>Favorite Color: <em>Dark Green</em></p>
+        <p>Favorite Website: <a href="https://www.youtube.com/" target=" _blank">YouTube</a></p>
+        <h2>Favorite Hobby:</h2>
+        <img src="hiking.jpeg" alt="hike">
+    </div>
+    <div class="column floatRight"> 
+        <h3>School Schedule:</h3>
+        <ol>
+            <li>CSCI 103</li>
+            <li>CSCI 170</li>
+            <li>CTIN 190</li>
+            <li>CTIN 488</li>
+            <li>ITP 104</li>
+        </ol>
+    </div>
+</div>
+<div class="row3">
+    <div class="column">
+        <h3>Assignments</h3>
+        <ul>
+            <li><a href="assignment01/index.html" target=" _blank">Assignment 01: Web Resume</a></li>
+            <li><a href="assignment02/index.html" target=" _blank">Assignment 02: TV show/movie Article</a></li>
+            <li><a href="assignment03/index.html" target=" _blank">Assignment 03: Two-Column TV Show/Movie Article</a></li>
+        </ul>
+    </div>
+    <div class="column floatRight"> 
+        <h3>Labs</h3>
+        <ul>
+            <li><a href="lab02/index.html" target=" _blank">Lab 02: Student Web Page</a></li>
+            <li><a href="lab03/index.html" target=" _blank">Lab 03: Updated Resume</a></li>
+            <li><a href="lab04/index.html" target=" _blank">Lab 04: Student Layout Page</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
